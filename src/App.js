@@ -13,23 +13,21 @@ class App extends Component {
 
 class Profile extends Component {
   render() {
-    const data = this.props.data;
+    //const data = this.props.data;
     return (
-      <div class="wrapper">
-        <div class="box a">{data.name}</div>
-        <div class="box b">
-          <img src={data.imgURL} width="500px" alt="Profile" />
-        </div>
-        <div class="box c">C</div>
-        <div class="box d">D</div>
-        <div class="box e">e</div>
-        <div class="box f">f</div>
-        <div class="box g">g</div>
+      <div className="cards">
+        <div className="card a">a</div>
+        <div className="card b">b</div>
+        <div className="card c">c</div>
+        <div className="card d">d</div>
+        <div className="card e">e</div>
+        <div className="card f">f</div>
       </div>
     );
   }
 }
 
+/*
 class Hobbys extends Component {
   render() {
     const data = this.props.data;
@@ -43,5 +41,7 @@ class Hobbys extends Component {
     );
   }
 }
+
+*/
 
 export default App;
