@@ -14,8 +14,17 @@ var data = {
     degree: 'B.S. of Computer Science',
     honors: ['Cum Laude', "Dean's List /(all semesters/)"],
     from: '01/08/2017',
-    to: '01/12/2020'
-  }
+    to: '01/12/2020',
+    desc: 'description text'
+  },
+  experience: [
+    {
+      name: 'USAF',
+      from: '01/07/2011',
+      to: '01/07/2017',
+      desc: 'description text'
+    }
+  ]
 };
 
 ReactDOM.render(<App data={data} />, document.getElementById('root'));

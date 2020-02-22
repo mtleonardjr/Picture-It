@@ -15,13 +15,16 @@ class Profile extends Component {
   render() {
     const data = this.props.data;
     return (
-      <div className="profile">
-        <h1>{data.name}</h1>
-        <img src={data.imgURL} width="500" alt="This is alt text" />
-        <div>
-          <b>My Hobbies</b>
+      <div class="wrapper">
+        <div class="box a">{data.name}</div>
+        <div class="box b">
+          <img src={data.imgURL} width="500px" alt="Profile" />
         </div>
-        <Hobbys data={this.props.data} />
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+        <div class="box e">e</div>
+        <div class="box f">f</div>
+        <div class="box g">g</div>
       </div>
     );
   }
