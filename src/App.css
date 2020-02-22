@@ -5,6 +5,7 @@
 .cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .card {
@@ -28,6 +29,18 @@
 
 @media screen and (min-width: 60em) {
   .card {
-    max-width: calc(25% - 1em);
+    flex: 1 1 30%;
   }
+}
+
+.image {
+  max-height: 480px;
+  height: 480px;
+}
+
+img {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: auto;
 }
