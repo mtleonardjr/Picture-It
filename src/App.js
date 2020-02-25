@@ -5,13 +5,34 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Profile data={this.props.data} />
+        <Card data={this.props.data} />
       </div>
     );
   }
 }
 
+/*
 class Profile extends Component {
+  render() {
+    const data = this.props.data;
+    return (
+      <div className="cards">
+        <article className="card a">
+          <img src={data.imgURL} className="image" />
+          <div>TEST</div>
+        </article>
+        <article className="card b">b</article>
+        <article className="card c">c</article>
+        <article className="card d">d</article>
+        <article className="card e">e</article>
+        <article className="card f">f</article>
+      </div>
+    );
+  }
+}
+*/
+
+class Card extends Component {
   render() {
     const data = this.props.data;
     return (
