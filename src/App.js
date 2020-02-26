@@ -10,9 +10,7 @@ class App extends Component {
           <Card />
         </div>
       </div> */
-      <div className="App">
-        <Profile />
-      </div>
+      <Profile />
     );
   }
 }

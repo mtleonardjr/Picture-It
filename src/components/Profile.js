@@ -25,19 +25,43 @@ class Profile extends Component {
 
     const user = users.slice(0, 1);
     return user.map(user => (
-      <article className="profile">
-        <div>
+      <article className="App">
+        <div className="profile">
           <img src={me} className="profile-image" alt="card" />
           <div>
             <div className="profile-title">{user.name}</div>
             <div className="info">
-              <p className="info-item">{user.username}</p>
-              <p className="info-item">{user.email}</p>
-              <p className="info-item">{user.phone}</p>
-              <p className="info-item">{user.website}</p>
+              <p className="info-item">
+                <i class="fa fa-user info"></i>
+                {user.username}
+              </p>
+              <p className="info-item">
+                <i class="fa fa-envelope info"></i>
+                {user.email}
+              </p>
+              <p className="info-item">
+                <i class="fa fa-phone info"></i>
+                {user.phone}
+              </p>
+              <p className="info-item">
+                <i class="fa fa-globe info"></i>
+                {user.website}
+              </p>
             </div>
             <div className="info">
-              <p className="info-item"></p>
+              <p className="company">{user.company.name}</p>
+              <p className="info-item">
+                <i class="fas fa-check-square"></i>
+                {user.company.catchPhrase}
+              </p>
+              <p className="info-item">
+                <i class="fas fa-check-square"></i>
+                {user.company.bs}
+              </p>
+            </div>
+            <div className="btn">
+              <button className="btn-primary">Profiles</button>
+              <button className="btn-secondary">Albums</button>
             </div>
           </div>
         </div>
