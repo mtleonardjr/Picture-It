@@ -16,9 +16,21 @@ class Card extends Component {
   render() {
     const { users } = this.state;
     return users.map(user => (
-      <article className="profile-cards">
-        <div className="profile-card"> Test</div>
-      </article>
+      <div className="App">
+        <article className="profile-cards">
+          <div className="profile-card">
+            <div className="profile-items">
+              <div className="profile-item">{user.name}</div>
+              <div className="profile-item">{user.email}</div>
+              <div className="profile-item">{user.address.city}</div>
+              <div className="profile-item">{user.address.zipcode}</div>
+              <div className="btn">
+                <button className="btn-primary">+</button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
     ));
   }
 }

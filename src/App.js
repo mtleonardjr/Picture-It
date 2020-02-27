@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Card from './components/Card';
-import Profile from './components/Profile';
+//import Card from './components/Card';
+//import Profile from './components/Profile';
 import Profiles from './components/Profiles';
 class App extends Component {
   render() {
@@ -13,11 +13,7 @@ class App extends Component {
       </div> */
       /*<Profile />*/
 
-      <div className="App">
-        <div className="cards">
-          <Profiles />
-        </div>
-      </div>
+      <Profiles />
     );
   }
 }

@@ -53,22 +53,19 @@
 }
 
 @media screen and (min-width: 40em) {
-  .card,
-  .profile-card {
+  .card {
     max-width: calc(100% - 1em);
   }
 }
 
 @media screen and (min-width: 60em) {
-  .card,
-  .profile-card {
+  .card {
     max-width: calc(50% - 1em);
   }
 }
 
 @media screen and (min-width: 80em) {
-  .card,
-  .profile-card {
+  .card {
     flex: 1 1 30%;
   }
 }
@@ -145,4 +142,21 @@ p {
   background-color: rgba(255, 255, 255, 0.788);
   padding: 1.4em;
   width: 1000px;
+}
+
+.profile-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.profile-item {
+  flex: 0 0 auto;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
