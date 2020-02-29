@@ -160,3 +160,14 @@ p {
   font-size: 1.2rem;
   font-weight: bold;
 }
+
+.navbar {
+  background-color: white;
+  margin: 0;
+  color: rgba(35, 175, 168, 0.788);
+}
+
+li a {
+  color: rgba(35, 175, 168, 0.788);
+  font-size: 1.2em;
+}
