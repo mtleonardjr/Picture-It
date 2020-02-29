@@ -2,7 +2,14 @@ import React, { Component } from 'react';
 import './App.css';
 //import Card from './components/Card';
 //import Profile from './components/Profile';
-import Profiles from './components/Profiles';
+//import Profiles from './components/Profiles';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 class App extends Component {
   render() {
     return (
@@ -11,9 +18,8 @@ class App extends Component {
           <Card />
         </div>
       </div> */
-      /*<Profile />*/
-
-      <Profiles />
+      /*<Profile />
+      <Profiles /> */
     );
   }
 }
